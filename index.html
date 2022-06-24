@@ -11,12 +11,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Lobster&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><i class="fa-solid fa-graduation-cap"> <span>Eduford</span> </i></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -25,6 +28,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="menu()"></i>
         </nav>
 
 <div class="text-box">
@@ -33,6 +37,18 @@
     <a href="" class="hero-btn">Visit Us To Know More</a>
 </div>
     </section>
+
+<!-- javascript -->
+    <script>
+        const navLinks =document.getElementById("navLinks");
+
+        function menu(){
+            navLinks.style.right="0"
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px"
+        }
+    </script>
     
 </body>
 </html>
