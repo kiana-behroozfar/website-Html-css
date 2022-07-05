@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter&family=Lobster&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-graduation-cap"> <span>Eduford</span> </i></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="menu()"></i>
+        </nav>
+
+        <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+<!-- blog content -->
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/csertificate.jpg">
+            <h2>Our Certificate & Online Programs For 2021</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, at. Sunt expedita deserunt non! Consequuntur, amet harum inventore, exercitationem aliquam fuga cupiditate, doloremque fugiat corporis sapiente maxime impedit odit nisi iste delectus officia natus! Fugit repellat voluptas perferendis fuga illum eum rem eos quos. Velit modi eaque sunt cum repellat delectus nesciunt iste sint, exercitationem nulla, doloribus, reiciendis autem fuga?</p>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam quod voluptas perferendis adipisci, excepturi doloremque saepe magni aspernatur officiis cumque. Porro quibusdam, libero cumque officia pariatur fuga mollitia sit, eius quae quis sed laboriosam cupiditate consequuntur corrupti dignissimos voluptate cum in commodi, molestiae itaque corporis eveniet exercitationem numquam. Explicabo sit quia deserunt, autem laboriosam voluptas perspiciatis eos corporis possimus quas necessitatibus nesciunt! Consequatur quo eum minus quae porro vero exercitationem unde deserunt pariatur repellat culpa fugiat dignissimos deleniti fugit labore, officiis inventore aut dolores aliquam.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint voluptates commodi dolor quaerat! Eius, provident harum ullam sapiente nesciunt quae iusto possimus at aliquam earum quidem a. Impedit quas, alias eius enim inventore incidunt, ipsa nam obcaecati sed dignissimos quia et adipisci illum odio vitae aspernatur molestias expedita totam fugiat blanditiis tenetur animi, soluta quasi. Laboriosam, enim voluptate perspiciatis animi id ipsum, natus ad, tempora atque aliquid fugiat odio reiciendis!</p>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem id quae quasi laboriosam commodi architecto nesciunt animi porro, cum debitis iusto, enim sapiente assumenda similique. Libero odit id omnis rem voluptatibus, aliquam culpa nemo ea in voluptate necessitatibus eveniet facilis eum. Eos soluta labore vero.</p>
+
+
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>42</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<section class="footer">
+<h4>About Us</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius itaque laudantium isteodio tenetur eaque modi veniam dolores<br>  quasi error, laboriosam necessitatibus.</p>
+
+<div class="icons">
+     <i class="fa fa-brands fa-facebook"></i>
+     <i class="fa fa-brands fa-twitter-square"></i>
+    <i class=" fa fa-brands fa-instagram"></i>
+     <i class="fa fa-brands fa-linkedin"></i>
+</div>
+<p>Made with <i class="fa fa-heart-o"></i> By Easy Tutorials </p>
+</section>
+
+
+<!-- javascript -->
+    <script>
+        const navLinks =document.getElementById("navLinks");
+
+        function menu(){
+            navLinks.style.right="0"
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px"
+        }
+    </script>
+    
+</body>
+</html>
